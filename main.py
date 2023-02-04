@@ -1,12 +1,15 @@
-# copyright 2020-22 @Mohamed Rizad
-# Telegram @riz4d
-# Instagram @riz.4d
+from os import environ
+import aiohttp
 from pyrogram import *
 import requests as re
 
 from pyrogram.types import InlineKeyboardButton,InlineKeyboardMarkup
 import wget
 import os 
+
+API_ID = environ.get('API_ID')
+API_HASH = environ.get('API_HASH')
+BOT_TOKEN = environ.get('BOT_TOKEN')
 
 buttons=InlineKeyboardMarkup(
                              [
